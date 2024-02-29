@@ -1,0 +1,137 @@
+header{
+	display: flex;
+	justify-content: space-beteween;
+	align-items:center;
+	padding:20px;
+}
+body{
+	background-color:#333;
+	color: #fff;
+}
+.dark-theme{
+background-color: #fff;
+color: #333;
+}
+.button {
+	margin-left: 10px;
+	padding: 10px 10px;
+	font-size:150%;
+	border-radius: 12px;
+	font-weight: 900;
+	border: none;
+	background-color: #ffffff;
+	color:#333;
+}
+.dark-theme .button {
+	border-radius: 12px;
+	background-color: #685D79;
+	color: #D8737F;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap:10px;
+}
+nav a {
+	background-color: #000000;
+	text-decoration: none;
+	color:#f44;
+	padding :10px;
+}
+.dark-theme nav a{
+	background-color:#ffffff;
+}
+nav {
+	display: flex;
+	justify-content: left;
+	padding: 20px;
+	background-color:#993333;
+	width:100%;
+}
+.dark-theme nav{
+	background-color:#ff7777;
+}
+main {
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	gap: 20px;
+	padding:20px;
+}
+footer{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	padding: 20px;
+	background-color:#030303;
+}
+.dark-theme footer{
+	background-color:#dddddd;
+}
+.article-header{
+	display:flex;
+	flex-direction:column;hrfsy  
+	align-items: center;
+	gap:10px;
+	padding:20px;
+}
+.article-content{
+	display: grid;
+	grid-template-columns:1fr;
+	gap: 20px;
+	padding:20px;
+}
+.sidebar{
+	display:flex;
+	flex-direction: column;
+	gap:10px;
+}
+.advertisment {
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.photo-gallery{
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	gap: 20px;
+	padding: 20px;
+}
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: auto;
+	max-height: 95%;
+	max-width: 95%;
+}
+.gallery-controls{
+	display: flex;
+	justify-content:center;
+	gap:10px;
+	padding:5px;
+}
+ .text{
+	padding:5px;
+	text-align: center;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+@media (max-Width: 768px){
+	.hamburger{
+		display: block;
+	}
+	nav ul{
+		flex-direction: column;
+		display: none;
+	}
+	nav ul.active{
+		display: flex;
+		gap :25px;
+	}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href ="css/style.css">
+</head>
+
+<body>
+<header>
+	<h1>Olds Parchment</h1>
+	<nav>
+		<div class="hamburger">☰</div>
+		<ul>
+			<li><a href="index.html"  >home</a></li>
+			<li><a href="article.html">articles</a></li>
+			<li><a href="gallery.html">gallery</a></li>
+			<button id = "themeButton"class="button"> 🔆 </button>
+		</ul>
+	</nav>
+</header>
+
+
+	<script src="main.js"></script>
+<!------------------------------------------------------slideshow-------------------------------------------------->
+		  <!-- Next and previous buttons -->
+	<div class ="gallery-controls">
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	
+	<div class="slideshow-container">
+
+	  <div class="mySlides">
+		<div class="text">science jar</div>
+		<img src="images/jar.jpg" alt ="science jar">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="text">mutant carot</div>
+		<img src="images/mutant carot.jpg" alt ="mutant carot">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="text">retro robot</div>
+		<img src="images/robot.jpg" alt ="retro robot">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="text">truck full of vegatables</div>
+		<img src="images/truck full of vegatables.jpg" alt ="truck full of vegatables">
+	  </div>
+	</div>
+	<br>
+
+<!------------------------------------------------------slideshow end------------------------------------------------->
+<!--
+	<div class="photo"><img src="images/jar.jpg" alt ="science jar"></div>
+	<div class="photo"><img src="images/mutant carot.jpg" alt ="mutant carot"></div>
+	<div class="photo"><img src="images/robot.jpg" alt ="retro robot"></div>
+	<div class="photo"><img src="images/truck full of vegatables.jpg" alt ="truck full of vegatables"></div>
+-->
+
+
+
+<footer>
+	<p> CC BY-NC</p>
+</footer>
+</body>
+</html>
